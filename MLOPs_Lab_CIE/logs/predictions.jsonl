@@ -1,0 +1,102 @@
+{"timestamp": "2026-05-03 17:15:57.085711", "input": {"gpu_memory_gb": 40, "batch_size": 64, "model_params_millions": 1500, "queue_depth": 8}, "prediction": 53.46223274814212, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.770292", "input": {"gpu_memory_gb": 40, "batch_size": 32, "model_params_millions": 600, "queue_depth": 8}, "prediction": 34.210255118033494, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.772141", "input": {"gpu_memory_gb": 16, "batch_size": 16, "model_params_millions": 100, "queue_depth": 3}, "prediction": 11.281167135228028, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.773313", "input": {"gpu_memory_gb": 80, "batch_size": 128, "model_params_millions": 6000, "queue_depth": 16}, "prediction": 128.8976962472934, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.774357", "input": {"gpu_memory_gb": 24, "batch_size": 64, "model_params_millions": 350, "queue_depth": 4}, "prediction": 25.93062684029648, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.775369", "input": {"gpu_memory_gb": 48, "batch_size": 64, "model_params_millions": 1000, "queue_depth": 9}, "prediction": 52.29982035497237, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.776323", "input": {"gpu_memory_gb": 8, "batch_size": 8, "model_params_millions": 30, "queue_depth": 1}, "prediction": 6.212621315579316, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.777206", "input": {"gpu_memory_gb": 16, "batch_size": 16, "model_params_millions": 100, "queue_depth": 3}, "prediction": 11.281167135228028, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.778055", "input": {"gpu_memory_gb": 24, "batch_size": 32, "model_params_millions": 250, "queue_depth": 5}, "prediction": 22.100867469199898, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.778887", "input": {"gpu_memory_gb": 16, "batch_size": 32, "model_params_millions": 125, "queue_depth": 3}, "prediction": 11.281167135228028, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.779739", "input": {"gpu_memory_gb": 64, "batch_size": 128, "model_params_millions": 3500, "queue_depth": 12}, "prediction": 89.33899548079765, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.780589", "input": {"gpu_memory_gb": 24, "batch_size": 64, "model_params_millions": 350, "queue_depth": 4}, "prediction": 25.93062684029648, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.781443", "input": {"gpu_memory_gb": 72, "batch_size": 256, "model_params_millions": 5000, "queue_depth": 15}, "prediction": 118.41833897436956, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.782401", "input": {"gpu_memory_gb": 24, "batch_size": 64, "model_params_millions": 350, "queue_depth": 4}, "prediction": 25.93062684029648, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.783816", "input": {"gpu_memory_gb": 64, "batch_size": 64, "model_params_millions": 2500, "queue_depth": 13}, "prediction": 82.02927086737343, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.784707", "input": {"gpu_memory_gb": 40, "batch_size": 64, "model_params_millions": 500, "queue_depth": 7}, "prediction": 34.210255118033494, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.785547", "input": {"gpu_memory_gb": 80, "batch_size": 256, "model_params_millions": 7000, "queue_depth": 18}, "prediction": 142.55695859805036, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.786403", "input": {"gpu_memory_gb": 72, "batch_size": 256, "model_params_millions": 5000, "queue_depth": 15}, "prediction": 118.41833897436956, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.787230", "input": {"gpu_memory_gb": 56, "batch_size": 256, "model_params_millions": 2800, "queue_depth": 12}, "prediction": 81.07486403899101, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.788078", "input": {"gpu_memory_gb": 8, "batch_size": 32, "model_params_millions": 75, "queue_depth": 2}, "prediction": 9.14139656917901, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.788889", "input": {"gpu_memory_gb": 72, "batch_size": 64, "model_params_millions": 4000, "queue_depth": 14}, "prediction": 98.2686535299008, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.789747", "input": {"gpu_memory_gb": 48, "batch_size": 64, "model_params_millions": 1000, "queue_depth": 9}, "prediction": 52.29982035497237, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.790589", "input": {"gpu_memory_gb": 32, "batch_size": 64, "model_params_millions": 450, "queue_depth": 5}, "prediction": 29.383203413465687, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.791427", "input": {"gpu_memory_gb": 24, "batch_size": 32, "model_params_millions": 250, "queue_depth": 5}, "prediction": 22.100867469199898, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.792251", "input": {"gpu_memory_gb": 32, "batch_size": 128, "model_params_millions": 800, "queue_depth": 6}, "prediction": 44.80022307444389, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.793058", "input": {"gpu_memory_gb": 80, "batch_size": 256, "model_params_millions": 7000, "queue_depth": 18}, "prediction": 142.55695859805036, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.793911", "input": {"gpu_memory_gb": 72, "batch_size": 256, "model_params_millions": 5000, "queue_depth": 15}, "prediction": 118.41833897436956, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.794771", "input": {"gpu_memory_gb": 32, "batch_size": 64, "model_params_millions": 450, "queue_depth": 5}, "prediction": 29.383203413465687, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.795588", "input": {"gpu_memory_gb": 32, "batch_size": 128, "model_params_millions": 800, "queue_depth": 6}, "prediction": 44.80022307444389, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.796392", "input": {"gpu_memory_gb": 24, "batch_size": 128, "model_params_millions": 300, "queue_depth": 4}, "prediction": 23.56071358185226, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.797361", "input": {"gpu_memory_gb": 80, "batch_size": 128, "model_params_millions": 6000, "queue_depth": 16}, "prediction": 128.8976962472934, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.798245", "input": {"gpu_memory_gb": 32, "batch_size": 64, "model_params_millions": 450, "queue_depth": 5}, "prediction": 29.383203413465687, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.799053", "input": {"gpu_memory_gb": 40, "batch_size": 128, "model_params_millions": 900, "queue_depth": 7}, "prediction": 45.8200619127068, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.799885", "input": {"gpu_memory_gb": 24, "batch_size": 32, "model_params_millions": 250, "queue_depth": 5}, "prediction": 22.100867469199898, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.800720", "input": {"gpu_memory_gb": 16, "batch_size": 32, "model_params_millions": 125, "queue_depth": 3}, "prediction": 11.281167135228028, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.801531", "input": {"gpu_memory_gb": 80, "batch_size": 128, "model_params_millions": 6000, "queue_depth": 16}, "prediction": 128.8976962472934, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.802320", "input": {"gpu_memory_gb": 24, "batch_size": 32, "model_params_millions": 250, "queue_depth": 5}, "prediction": 22.100867469199898, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.803121", "input": {"gpu_memory_gb": 64, "batch_size": 64, "model_params_millions": 2500, "queue_depth": 13}, "prediction": 82.02927086737343, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.803900", "input": {"gpu_memory_gb": 24, "batch_size": 64, "model_params_millions": 350, "queue_depth": 4}, "prediction": 25.93062684029648, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.804885", "input": {"gpu_memory_gb": 64, "batch_size": 128, "model_params_millions": 3500, "queue_depth": 12}, "prediction": 89.33899548079765, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.805713", "input": {"gpu_memory_gb": 16, "batch_size": 16, "model_params_millions": 100, "queue_depth": 3}, "prediction": 11.281167135228028, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.807361", "input": {"gpu_memory_gb": 80, "batch_size": 256, "model_params_millions": 6800, "queue_depth": 20}, "prediction": 142.55695859805036, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.808189", "input": {"gpu_memory_gb": 72, "batch_size": 256, "model_params_millions": 6000, "queue_depth": 18}, "prediction": 130.86921245137742, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.809034", "input": {"gpu_memory_gb": 64, "batch_size": 64, "model_params_millions": 4000, "queue_depth": 14}, "prediction": 97.764334280685, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.809875", "input": {"gpu_memory_gb": 80, "batch_size": 256, "model_params_millions": 6800, "queue_depth": 20}, "prediction": 142.55695859805036, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.810687", "input": {"gpu_memory_gb": 80, "batch_size": 128, "model_params_millions": 6500, "queue_depth": 20}, "prediction": 133.63250567475492, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.811536", "input": {"gpu_memory_gb": 72, "batch_size": 128, "model_params_millions": 6500, "queue_depth": 19}, "prediction": 130.83421167098015, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.812345", "input": {"gpu_memory_gb": 48, "batch_size": 256, "model_params_millions": 4000, "queue_depth": 16}, "prediction": 100.7159505431431, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.813150", "input": {"gpu_memory_gb": 72, "batch_size": 256, "model_params_millions": 6000, "queue_depth": 18}, "prediction": 130.86921245137742, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.813973", "input": {"gpu_memory_gb": 80, "batch_size": 256, "model_params_millions": 6200, "queue_depth": 19}, "prediction": 133.722252725537, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03 17:20:03.814805", "input": {"gpu_memory_gb": 80, "batch_size": 128, "model_params_millions": 7000, "queue_depth": 17}, "prediction": 137.7324021198067, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:27:30.070063", "input": {"gpu_memory_gb": 40.0, "batch_size": 64, "model_params_millions": 1500.0, "queue_depth": 8}, "prediction": 53.4622, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.197136", "input": {"gpu_memory_gb": 32.0, "batch_size": 8, "model_params_millions": 738.4, "queue_depth": 2}, "prediction": 34.7153, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.198918", "input": {"gpu_memory_gb": 8.0, "batch_size": 128, "model_params_millions": 829.4, "queue_depth": 2}, "prediction": 32.0833, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.200305", "input": {"gpu_memory_gb": 16.0, "batch_size": 128, "model_params_millions": 265.5, "queue_depth": 2}, "prediction": 16.9028, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.201585", "input": {"gpu_memory_gb": 48.0, "batch_size": 16, "model_params_millions": 686.6, "queue_depth": 8}, "prediction": 37.1796, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.202895", "input": {"gpu_memory_gb": 56.0, "batch_size": 8, "model_params_millions": 219.6, "queue_depth": 3}, "prediction": 26.9467, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.204113", "input": {"gpu_memory_gb": 64.0, "batch_size": 128, "model_params_millions": 655.0, "queue_depth": 2}, "prediction": 34.2087, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.205289", "input": {"gpu_memory_gb": 56.0, "batch_size": 64, "model_params_millions": 434.7, "queue_depth": 2}, "prediction": 33.4131, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.206440", "input": {"gpu_memory_gb": 16.0, "batch_size": 64, "model_params_millions": 842.9, "queue_depth": 3}, "prediction": 32.1815, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.207552", "input": {"gpu_memory_gb": 72.0, "batch_size": 64, "model_params_millions": 245.1, "queue_depth": 6}, "prediction": 35.7041, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.208776", "input": {"gpu_memory_gb": 80.0, "batch_size": 8, "model_params_millions": 909.9, "queue_depth": 4}, "prediction": 46.2079, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.209929", "input": {"gpu_memory_gb": 48.0, "batch_size": 32, "model_params_millions": 719.3, "queue_depth": 10}, "prediction": 57.5275, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.211074", "input": {"gpu_memory_gb": 48.0, "batch_size": 8, "model_params_millions": 266.0, "queue_depth": 10}, "prediction": 41.6816, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.212196", "input": {"gpu_memory_gb": 24.0, "batch_size": 256, "model_params_millions": 637.4, "queue_depth": 5}, "prediction": 28.1918, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.213175", "input": {"gpu_memory_gb": 16.0, "batch_size": 256, "model_params_millions": 734.5, "queue_depth": 1}, "prediction": 31.9759, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.214305", "input": {"gpu_memory_gb": 16.0, "batch_size": 32, "model_params_millions": 881.9, "queue_depth": 10}, "prediction": 51.7954, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.215410", "input": {"gpu_memory_gb": 24.0, "batch_size": 128, "model_params_millions": 739.3, "queue_depth": 6}, "prediction": 42.2264, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.216508", "input": {"gpu_memory_gb": 64.0, "batch_size": 8, "model_params_millions": 854.8, "queue_depth": 10}, "prediction": 60.9272, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.217600", "input": {"gpu_memory_gb": 72.0, "batch_size": 8, "model_params_millions": 869.2, "queue_depth": 1}, "prediction": 42.4473, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.218600", "input": {"gpu_memory_gb": 64.0, "batch_size": 128, "model_params_millions": 870.4, "queue_depth": 4}, "prediction": 45.873, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.219713", "input": {"gpu_memory_gb": 32.0, "batch_size": 32, "model_params_millions": 613.9, "queue_depth": 9}, "prediction": 37.5048, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.220803", "input": {"gpu_memory_gb": 24.0, "batch_size": 16, "model_params_millions": 340.4, "queue_depth": 6}, "prediction": 29.7378, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.221873", "input": {"gpu_memory_gb": 24.0, "batch_size": 128, "model_params_millions": 342.8, "queue_depth": 10}, "prediction": 42.9322, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.222948", "input": {"gpu_memory_gb": 56.0, "batch_size": 16, "model_params_millions": 646.1, "queue_depth": 8}, "prediction": 41.6263, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.224000", "input": {"gpu_memory_gb": 72.0, "batch_size": 64, "model_params_millions": 252.9, "queue_depth": 10}, "prediction": 50.6902, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.225063", "input": {"gpu_memory_gb": 32.0, "batch_size": 8, "model_params_millions": 738.6, "queue_depth": 3}, "prediction": 34.7153, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.226136", "input": {"gpu_memory_gb": 72.0, "batch_size": 256, "model_params_millions": 79.7, "queue_depth": 10}, "prediction": 48.936, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.227160", "input": {"gpu_memory_gb": 48.0, "batch_size": 64, "model_params_millions": 528.6, "queue_depth": 9}, "prediction": 40.5608, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.228110", "input": {"gpu_memory_gb": 72.0, "batch_size": 64, "model_params_millions": 742.3, "queue_depth": 10}, "prediction": 61.1966, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.229190", "input": {"gpu_memory_gb": 64.0, "batch_size": 8, "model_params_millions": 788.7, "queue_depth": 10}, "prediction": 60.9272, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.230289", "input": {"gpu_memory_gb": 72.0, "batch_size": 64, "model_params_millions": 773.2, "queue_depth": 7}, "prediction": 53.1424, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.231400", "input": {"gpu_memory_gb": 32.0, "batch_size": 128, "model_params_millions": 501.8, "queue_depth": 9}, "prediction": 37.5048, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.232544", "input": {"gpu_memory_gb": 80.0, "batch_size": 256, "model_params_millions": 981.0, "queue_depth": 6}, "prediction": 51.9539, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.233629", "input": {"gpu_memory_gb": 8.0, "batch_size": 128, "model_params_millions": 75.2, "queue_depth": 3}, "prediction": 9.1414, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.234701", "input": {"gpu_memory_gb": 16.0, "batch_size": 64, "model_params_millions": 734.9, "queue_depth": 8}, "prediction": 42.9784, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.235712", "input": {"gpu_memory_gb": 56.0, "batch_size": 32, "model_params_millions": 772.4, "queue_depth": 3}, "prediction": 41.6004, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.236795", "input": {"gpu_memory_gb": 56.0, "batch_size": 128, "model_params_millions": 633.8, "queue_depth": 7}, "prediction": 41.6263, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.237871", "input": {"gpu_memory_gb": 48.0, "batch_size": 128, "model_params_millions": 840.1, "queue_depth": 9}, "prediction": 52.1706, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.238927", "input": {"gpu_memory_gb": 80.0, "batch_size": 16, "model_params_millions": 611.6, "queue_depth": 8}, "prediction": 42.4644, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.239982", "input": {"gpu_memory_gb": 32.0, "batch_size": 8, "model_params_millions": 722.2, "queue_depth": 2}, "prediction": 34.7153, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.241073", "input": {"gpu_memory_gb": 80.0, "batch_size": 64, "model_params_millions": 271.1, "queue_depth": 8}, "prediction": 37.1924, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.242171", "input": {"gpu_memory_gb": 80.0, "batch_size": 256, "model_params_millions": 5480.9, "queue_depth": 20}, "prediction": 130.7972, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.243196", "input": {"gpu_memory_gb": 72.0, "batch_size": 128, "model_params_millions": 6077.4, "queue_depth": 18}, "prediction": 130.8342, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.244204", "input": {"gpu_memory_gb": 64.0, "batch_size": 256, "model_params_millions": 5730.5, "queue_depth": 18}, "prediction": 130.697, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.245230", "input": {"gpu_memory_gb": 72.0, "batch_size": 128, "model_params_millions": 6069.2, "queue_depth": 17}, "prediction": 126.1877, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.246702", "input": {"gpu_memory_gb": 72.0, "batch_size": 256, "model_params_millions": 6459.6, "queue_depth": 19}, "prediction": 130.8692, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.247989", "input": {"gpu_memory_gb": 64.0, "batch_size": 256, "model_params_millions": 4349.5, "queue_depth": 18}, "prediction": 108.475, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.249093", "input": {"gpu_memory_gb": 72.0, "batch_size": 256, "model_params_millions": 6512.9, "queue_depth": 15}, "prediction": 129.7161, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.250083", "input": {"gpu_memory_gb": 72.0, "batch_size": 256, "model_params_millions": 4238.0, "queue_depth": 14}, "prediction": 98.2687, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.251056", "input": {"gpu_memory_gb": 72.0, "batch_size": 256, "model_params_millions": 6166.6, "queue_depth": 19}, "prediction": 130.8692, "endpoint": "/estimate"}
+{"timestamp": "2026-05-03T12:28:55.252038", "input": {"gpu_memory_gb": 80.0, "batch_size": 128, "model_params_millions": 6227.7, "queue_depth": 18}, "prediction": 133.6325, "endpoint": "/estimate"}

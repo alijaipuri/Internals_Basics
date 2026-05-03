@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+mlruns/
+*.pkl
+.DS_Store
+venv/
