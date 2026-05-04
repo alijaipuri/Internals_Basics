@@ -1,84 +1,84 @@
 import pandas as pd
 import numpy as np
-import mlflow
-import mlflow.sklearn
 import json
 import os
-import pickle
+import joblib
+import mlflow
+import mlflow.sklearn
 from sklearn.linear_model import Ridge
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+from sklearn.metrics import mean_absolute_error, mean_squared_error
+
+# Paths
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_PATH = os.path.join(BASE_DIR, "data", "training_data.csv")
+RESULTS_DIR = os.path.join(BASE_DIR, "results")
+MODELS_DIR = os.path.join(BASE_DIR, "models")
+os.makedirs(RESULTS_DIR, exist_ok=True)
+os.makedirs(MODELS_DIR, exist_ok=True)
 
 # Load data
-df = pd.read_csv("data/training_data.csv")
-X = df[["gpu_memory_gb", "batch_size", "model_params_millions", "queue_depth"]]
-y = df["job_completion_min"]
+df = pd.read_csv(DATA_PATH)
+X = df[["request_size_kb", "server_load", "is_cached", "region_latency"]]
+y = df["response_time_ms"]
 
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
 
-def compute_metrics(y_true, y_pred):
-    mae = mean_absolute_error(y_true, y_pred)
-    rmse = np.sqrt(mean_squared_error(y_true, y_pred))
-    r2 = r2_score(y_true, y_pred)
-    mape = np.mean(np.abs((y_true - y_pred) / y_true)) * 100
-    return {"mae": round(mae, 4), "rmse": round(rmse, 4),
-            "r2": round(r2, 4), "mape": round(mape, 4)}
+EXPERIMENT_NAME = "cloudpulse-response-time-ms"
+mlflow.set_experiment(EXPERIMENT_NAME)
 
-mlflow.set_experiment("gpuforge-job-completion")
+models = {
+    "Ridge": Ridge(alpha=1.0),
+    "GradientBoosting": GradientBoostingRegressor(
+        n_estimators=100, learning_rate=0.1, max_depth=3, random_state=42
+    ),
+}
 
 results = []
-trained_models = {}
 
-# --- Ridge ---
-with mlflow.start_run(run_name="Ridge"):
-    mlflow.set_tag("experiment_type", "baseline_comparison")
-    params = {"alpha": 1.0, "fit_intercept": True}
-    model = Ridge(**params)
-    model.fit(X_train, y_train)
-    preds = model.predict(X_test)
-    metrics = compute_metrics(y_test.values, preds)
-    mlflow.log_params(params)
-    mlflow.log_metrics(metrics)
-    mlflow.sklearn.log_model(model, "ridge_model")
-    results.append({"name": "Ridge", **metrics})
-    trained_models["Ridge"] = model
-    print(f"Ridge -> {metrics}")
+for model_name, model in models.items():
+    with mlflow.start_run(run_name=model_name):
+        mlflow.set_tag("priority", "high")
 
-# --- GradientBoosting ---
-with mlflow.start_run(run_name="GradientBoosting"):
-    mlflow.set_tag("experiment_type", "baseline_comparison")
-    params = {"n_estimators": 100, "learning_rate": 0.1,
-              "max_depth": 3, "random_state": 42}
-    model = GradientBoostingRegressor(**params)
-    model.fit(X_train, y_train)
-    preds = model.predict(X_test)
-    metrics = compute_metrics(y_test.values, preds)
-    mlflow.log_params(params)
-    mlflow.log_metrics(metrics)
-    mlflow.sklearn.log_model(model, "gb_model")
-    results.append({"name": "GradientBoosting", **metrics})
-    trained_models["GradientBoosting"] = model
-    print(f"GradientBoosting -> {metrics}")
+        # Log params
+        params = model.get_params()
+        mlflow.log_params(params)
 
-# Pick best by RMSE
+        # Train
+        model.fit(X_train, y_train)
+        preds = model.predict(X_test)
+
+        mae = mean_absolute_error(y_test, preds)
+        rmse = np.sqrt(mean_squared_error(y_test, preds))
+
+        mlflow.log_metric("mae", mae)
+        mlflow.log_metric("rmse", rmse)
+
+        mlflow.sklearn.log_model(model, model_name)
+
+        print(f"{model_name} → MAE: {mae:.4f}, RMSE: {rmse:.4f}")
+        results.append({"name": model_name, "mae": round(mae, 4), "rmse": round(rmse, 4), "model": model})
+
+# Select best by RMSE
 best = min(results, key=lambda x: x["rmse"])
+print(f"\nBest model: {best['name']} with RMSE={best['rmse']}")
 
-# Save best model to disk
-os.makedirs("models", exist_ok=True)
-with open("models/best_model.pkl", "wb") as f:
-    pickle.dump({"model": trained_models[best["name"]], "name": best["name"]}, f)
-print(f"\nBest model: {best['name']} saved to models/best_model.pkl")
+# Save best model
+joblib.dump(best["model"], os.path.join(MODELS_DIR, "best_model.pkl"))
 
-# Print result JSON
+# Save result JSON
 output = {
-    "experiment_name": "gpuforge-job-completion",
-    "models": results,
+    "experiment_name": EXPERIMENT_NAME,
+    "models": [{"name": r["name"], "mae": r["mae"], "rmse": r["rmse"]} for r in results],
     "best_model": best["name"],
     "best_metric_name": "rmse",
     "best_metric_value": best["rmse"]
 }
-print("\n===== TASK 1 RESULT =====")
-print(json.dumps(output, indent=2))
+
+with open(os.path.join(RESULTS_DIR, "step1_s1.json"), "w") as f:
+    json.dump(output, f, indent=2)
+
+print("Saved results/step1_s1.json")

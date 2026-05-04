@@ -1,46 +1,34 @@
-import pickle
+from fastapi import FastAPI
+from pydantic import BaseModel, Field
+import joblib
+import numpy as np
 import json
 import os
-from datetime import datetime
-from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import JSONResponse
-from pydantic import BaseModel, Field
 
-# Load model
-with open("models/best_model.pkl", "rb") as f:
-    bundle = pickle.load(f)
-MODEL = bundle["model"]
-MODEL_NAME = bundle["name"]
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MODEL_PATH = os.path.join(BASE_DIR, "models", "best_model.pkl")
+RESULTS_DIR = os.path.join(BASE_DIR, "results")
 
 app = FastAPI()
+model = joblib.load(MODEL_PATH)
 
-os.makedirs("logs", exist_ok=True)
+class Features(BaseModel):
+    request_size_kb: float = Field(..., ge=1, le=500)
+    server_load: float = Field(..., ge=0.1, le=1.0)
+    is_cached: int = Field(..., ge=0, le=1)
+    region_latency: float = Field(..., ge=10, le=200)
 
-class JobFeatures(BaseModel):
-    gpu_memory_gb: float = Field(..., ge=8, le=80)
-    batch_size: int = Field(..., ge=8, le=256)
-    model_params_millions: float = Field(..., ge=10, le=7000)
-    queue_depth: int = Field(..., ge=1, le=20)
+@app.get("/ping")
+def ping():
+    return {"status": "healthy", "model_loaded": True}
 
-@app.get("/status")
-def status():
-    return {"status": "running", "model": MODEL_NAME, "version": "1.0"}
-
-@app.post("/estimate")
-def estimate(job: JobFeatures):
-    features = [[
-        job.gpu_memory_gb,
-        job.batch_size,
-        job.model_params_millions,
-        job.queue_depth
-    ]]
-    prediction = float(MODEL.predict(features)[0])
-    log_entry = {
-        "timestamp": datetime.utcnow().isoformat(),
-        "input": job.dict(),
-        "prediction": round(prediction, 4),
-        "endpoint": "/estimate"
-    }
-    with open("logs/predictions.jsonl", "a") as f:
-        f.write(json.dumps(log_entry) + "\n")
-    return {"prediction": round(prediction, 4)}
+@app.post("/score")
+def score(features: Features):
+    X = np.array([[
+        features.request_size_kb,
+        features.server_load,
+        features.is_cached,
+        features.region_latency
+    ]])
+    prediction = float(model.predict(X)[0])
+    return {"prediction": prediction}

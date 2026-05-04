@@ -1,6 +1,6 @@
+venv/
 __pycache__/
 *.pyc
 mlruns/
-*.pkl
 .DS_Store
-venv/
+*.log

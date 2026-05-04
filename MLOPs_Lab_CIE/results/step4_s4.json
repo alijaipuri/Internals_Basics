@@ -1,0 +1,8 @@
+{
+  "health_endpoint": "/ping",
+  "predict_endpoint": "/score",
+  "port": 9000,
+  "health_response": {"status": "healthy", "model_loaded": true},
+  "test_input": {"request_size_kb": 175.7, "server_load": 0.4, "is_cached": 0, "region_latency": 132},
+  "prediction": 109.3480558896382
+}
